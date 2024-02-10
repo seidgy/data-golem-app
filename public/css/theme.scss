@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+*, :root, ::before, ::after {
+    --primary-hsl: 210, 100%, 13%;
+    --secondary-hsl: 209, 59%, 58%;
+    --base-hsl: 0, 0%, 0%;
+    
+
+    --primary-color: hsl(var(--primary-hsl), 1);
+    --primary-color-80: hsl(var(--primary-hsl), 0.8);
+
+    --base-color: hsl(var(--base-hsl), 1);
+    --base-color-90: hsl(var(--base-hsl), 0.9);
+    --base-color-10: hsl(var(--base-hsl), 0.1);
+
+    --secondary-color: hsl(var(--secondary-hsl), 1);
+    --secondary-color-30: hsl(var(--secondary-hsl), .3);
+    --body-font: 'Lato', sans-serif;	
+    --display-font: 'Inter', sans-serif;
+
+    --base-gradient: linear-gradient(to bottom, hsl(221,42%,0%) 0%, hsl(221,42%,27%) 60%, hsla(221,42%,0%) 100%);
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    line-height: 1.2em;
+    color: var(--base-color-90);
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--display-font);
+}
+
+.tag {
+    color: hsla(0, 0%, 100%, 0.6);
+    background-color: var(--primary-color-80);
+    font-family: var(--display-font);
+    font-size: 0.625em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    &[color="secondary"] {
+        background-color: hsla(0, 0%, 100%, 0.6);
+        color: #000;
+    }
+    &[color="accent"] {
+        background-color: #D4C2B0;
+        color: hsla(0, 0%, 0%, 0.6);
+    }
+}
+
+img {
+    width: 100%;
+}
