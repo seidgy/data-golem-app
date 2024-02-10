@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate-data-golem",
+  "version": "1.0.0",
+  "description": "Boilerplate para um projeto utilizando o ecosistema Data Golem",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "dev": "node ./contentImporter.js && nuxt dev",
+    "generate": "node ./contentImporter.js && nuxt generate",
+    "preview": "node ./contentImporter.js && nuxt preview"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nuxt": "^3.0.0-rc.11"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.9.0",
+    "@directus/sdk": "^10.3.3",
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "jsdom": "^22.1.0",
+    "sass": "^1.54.4"
+  }
+}
